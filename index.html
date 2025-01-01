@@ -6,9 +6,27 @@
     <title>Document</title>
     <style>
 
-      p {
-        border-bottom: 6px solid red;
-        background-color: lightgrey;
+      p.normal {
+        border: 2px solid red;
+        padding: 5px;
+      }
+
+      p.round1 {
+        border: 2px solid red;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      p.round2 {
+        border: 2px solid red;
+        border-radius: 8px;
+        padding: 5px;
+      }
+
+      p.round3 {
+        border: 2px solid red;
+        border-radius: 12px;
+        padding: 5px;
       }
        
     </style>
@@ -16,8 +34,11 @@
 </head>
 <body>
 
-  <p>This property is a shorthand property for border-width, border-style, and border-color.</p>
+  <p class="normal">Normal border</p>
+  <p class="round1">Round border</p>
+  <p class="round2">Rounder border</p>
+  <p class="round3">Roundest border</p>
 
-  
+
 </body>
 </html>
