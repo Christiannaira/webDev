@@ -6,20 +6,12 @@
     <title>Document</title>
     <style>
 
-      body {
-        font-size: 100%;
-      }
-      
-      h1 {
-        font-size: 2.5em;
+      p.a {
+        font: 20px Arial, sans-serif;
       }
 
-      h2 {
-        font-size: 1.875em;
-      }
-
-      p {
-        font-size: 0.875em;
+      p.b {
+        font: italic small-caps bold 12px/30px Georgia, serif;
       }
 
     </style>
@@ -27,11 +19,11 @@
 </head>
 <body>
 
-  <h1 style="font-size: 10vw;">Responsive Text</h1>
+  <h1>The font Property</h1>
 
-  <p style="font-size: 5vw;">Resize the browser window to see how the text size scales.</p>
+<p class="a">This is a paragraph. The font size is set to 20 pixels, and the font family is Arial.</p>
 
-  <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+<p class="b">This is a paragraph. The font is set to italic, small-caps and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
 
 
 </body>
