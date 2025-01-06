@@ -18,8 +18,8 @@
       border-bottom: 1px solid #ddd;
     }
 
-    tr:hover {
-      background-color: coral;
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
     }
 
     </style>
@@ -27,36 +27,36 @@
 </head>
 <body>
 
-  <h2>Bordered Table Dividers</h2>
-<p>Add the border-bottom property to th and td for horizontal dividers:</p>
+  <h2>Striped Table</h2>
 
-<table>
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-  <th>Savings</th>
-  </tr>
-  <tr>
+  <p>For zebra-striped tables, use the nth-child() selector and add a background-color to all even (or odd) table rows:</p>
+  
+  <table>
+    <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
+    </tr>
+    <tr>
     <td>Peter</td>
     <td>Griffin</td>
     <td>$100</td>
-  </tr>
-  <tr>
+    </tr>
+    <tr>
     <td>Lois</td>
     <td>Griffin</td>
     <td>$150</td>
-  </tr>
-  <tr>
+    </tr>
+    <tr>
     <td>Joe</td>
     <td>Swanson</td>
     <td>$300</td>
-  </tr>
-  <tr>
+    </tr>
+    <tr>
     <td>Cleveland</td>
     <td>Brown</td>
     <td>$250</td>
-  </tr>
-</table>
-
+    </tr>
+  </table>
 </body>
 </html>
