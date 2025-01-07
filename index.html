@@ -20,8 +20,10 @@
         float: right;
       }
 
-      .clearfix {
-        overflow: auto;
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
       }
      
     </style>
