@@ -7,24 +7,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
 
-      .container {
-        position: relative;
-      }
-
-      .topleft {
-        position: absolute;
-        top: 50%;
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-      }
-
       img {
-        width: 100%;
-        height: auto;
-        opacity: 0.3;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: -1;
       }
-      
       
     </style>
 
@@ -32,13 +20,10 @@
 <body>
 
   
-  <h2>Image Text</h2>
-  <p>Add some text to an image in the top left corner:</p>
-  
-  <div class="container">
-    <img src="lake-como.webp" alt="Cinque Terre" width="1000" height="300">
-    <div class="topleft">Top Left</div>
-  </div>
+  <h1>This is a heading</h1>
+  <img src="tree.png" alt="">
+  <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
   
 
 
