@@ -7,21 +7,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      * {
-        box-sizing: border-box;
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: dodgerblue;
       }
 
-      .box {
-        float: left;
+      .flex-container .box {
+        background-color: #f1f1f1;
         width: 50%;
-        padding: 50px;
-        height: 300px;
-      }
-
-      .clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
       }
      
     </style>
@@ -29,24 +27,16 @@
 </head>
 <body>
 
-  <h2>Equal Height Boxes</h2>
-  <p>Floating boxes with equal heights:</p>
-  
-  <div class="clearfix">
-    <div class="box" style="background-color:#bbb">
-    <h2>Box 1</h2>
-    <p>Some content, some content, some content</p>
-    </div>
-    <div class="box" style="background-color:#ccc">
-    <h2>Box 2</h2>
-    <p>Some content, some content, some content</p>
-    <p>Some content, some content, some content</p>
-    <p>Some content, some content, some content</p>
-    </div>
+  <h1>Flexible Boxes</h1>
+
+  <div class="flex-container">
+    <div class="box">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+    <div class="box">Box 2 - My height will follow Box 1.</div>
   </div>
   
-  <p>This example not very flexible. It is ok to use CSS height if you can guarantee that the boxes will always have the same amount of content in them, but that's not always the case. If you try the example above on a mobile phone (or resize the browser window), you will see that the second box's content will be displayed outside of the box.</p>
-  <p>Go back to the tutorial and find another solution, if this is not what you want.</p>
+  <p>Try to resize the browser window to see the flexible layout.</p>
+  <p><strong>Note:</strong> Flexbox is not supported in Internet Explorer 10 or earlier versions.</p>
+  
 
 </body>
 </html>
