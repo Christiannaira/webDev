@@ -7,11 +7,22 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      .right {
+      div {
+        border: 3px solid #4CAF50;
+      }
+
+      .img1 {
         float: right;
-        width: 300px;
-        border: 3px solid #73AD21;
-        padding: 10px;
+      }
+
+      .img2 {
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
       }
 
     </style>
@@ -19,12 +30,21 @@
 </head>
 <body>
 
-  <h2>Right align with the float property</h2>
+  <h2>Without Clearfix</h2>
 
-  <p>An example of how to right align elements with the float property:</p>
+  <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
   
-  <div class="right">
-    <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.</p>
+  <div>
+    <img class="img1" src="lake-como.webp" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  </div>
+  
+  <h2 style="clear:right">With New Modern Clearfix</h2>
+  <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+  
+  <div class="clearfix">
+    <img class="img2" src="lake-como.webp" alt="Pineapple" width="170" height="170">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
   </div>
 
   
