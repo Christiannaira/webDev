@@ -8,18 +8,11 @@
     <style> 
 
       .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 200px;
-        position: relative;
-        border: 3px solid green
-      }
-
-      .center p {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
+        border: 2px solid green;
       }
       
     </style>
@@ -27,9 +20,9 @@
 </head>
 <body>
 
-  <h2>Center with position and transform</h2>
+  <h2>Flexbox Centering</h2>
 
-  <p>In this example, we use positioning and the transform property to vertically and horizontally center the div element:</p>
+  <p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
   
   <div class="center">
     <p>I am vertically and horizontally centered.</p>
