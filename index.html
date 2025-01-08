@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      .center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-        border: 2px solid green;
+      div p {
+
+        background-color: yellow;
       }
       
     </style>
@@ -20,13 +17,18 @@
 </head>
 <body>
 
-  <h2>Flexbox Centering</h2>
+  <h2>Descendant Selector</h2>
 
-  <p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the item(s) in the center (in both axis).</p>
+  <p>The descendant selector matches all elements that are descendants of a specified element.</p>
   
-  <div class="center">
-    <p>I am vertically and horizontally centered.</p>
+  <div>
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section>
   </div>
+  
+  <p>Paragraph 4. Not in a div.</p>
+  <p>Paragraph 5. Not in a div.</p>
 
   
 </body>
