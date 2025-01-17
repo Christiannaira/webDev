@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      body {margin: 0;}
+      body {
+        font-size: 28px;
+      }      
 
       ul {
         list-style-type: none;
@@ -15,9 +17,9 @@
         padding: 0;
         overflow: hidden;
         background-color: #333;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
       }
 
       li {
@@ -32,12 +34,12 @@
         text-decoration: none;
       }
 
-      li a:hover:not(.active) {
+      li a:hover {
         background-color: #111;
       }
 
       .active {
-        background-color: #04AA6D;
+        background-color: #4CAF50;
       }
 
     </style>
@@ -45,39 +47,27 @@
 </head>
 <body>
 
+  <div class="header">
+    <h2>Scroll Down</h2>
+    <p>Scroll down to see the sticky effect.</p>
+  </div>
+  
   <ul>
     <li><a class="active" href="#home">Home</a></li>
     <li><a href="#news">News</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#about">About</a></li>
   </ul>
   
-  <div style="padding:20px;margin-top:30px;background-color:#1abc9c;height:1500px;">
-    <h1>Fixed Top Navigation Bar</h1>
-    <h2>Scroll this page to see the effect</h2>
-    <h2>The navigation bar will stay at the top of the page while scrolling</h2>
-  
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-    <p>Some text some text some text some text..</p>
-  </div>
+  <h3>Sticky Navigation Bar Example</h3>
+  <p>The navbar will <strong>stick</strong> to the top when you reach its scroll position.</p>
+  <p><strong>Note:</strong> Internet Explorer do not support sticky positioning and Safari requires a -webkit- prefix.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
   
 </body>
 </html>
