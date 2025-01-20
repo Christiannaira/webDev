@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      a[target="_blank"] {
-        background-color: yellow;
+      [title~="flower"] {
+        border: 5px solid yellow
       }
 
     </style>
@@ -16,12 +16,12 @@
 </head>
 <body>
 
-  <h2>CSS [attribute="value"] Selector</h2>
-  <p>The link with target="_blank" gets a yellow background:</p>
+  <h2>CSS [attribute~="value"] Selector</h2>
+  <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
   
-  <a href="https://www.w3schools.com">w3schools.com</a>
-  <a href="http://www.disney.com" target="_blank">disney.com</a>
-  <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+  <img src="lake-como.webp" title="klematis flower" width="150" height="113">
+  <img src="lake-como.webp" title="flower" width="224" height="162">
+  <img src="lake-como.webp" title="tree" width="200" height="358">
   
   
 </body>
