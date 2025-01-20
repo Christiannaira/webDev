@@ -12,9 +12,12 @@
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
-        border: none;
-        background-color: #3CBC8D;
-        color: white;
+        border: 1px solid #555;
+        outline: none;
+      }
+
+      input[type=text]:focus {
+        background-color: lightblue;
       }
 
     </style>
@@ -23,7 +26,9 @@
 <body>
 
 
-<h2>Styling Forms</h2>
+  <h2>Input fields with color on :focus</h2>
+
+  <p>Here, the input field gets a color when it gets focus (clicked on):</p>
 
 <form action="">
   <label for="fname">First Name</label>
