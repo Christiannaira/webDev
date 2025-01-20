@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      [title~="flower"] {
-        border: 5px solid yellow
+      [class|="top"] {
+        background: yellow;
       }
 
     </style>
@@ -16,12 +16,11 @@
 </head>
 <body>
 
-  <h2>CSS [attribute~="value"] Selector</h2>
-  <p>All images with the title attribute containing the word "flower" get a yellow border.</p>
-  
-  <img src="lake-como.webp" title="klematis flower" width="150" height="113">
-  <img src="lake-como.webp" title="flower" width="224" height="162">
-  <img src="lake-como.webp" title="tree" width="200" height="358">
+  <h2>CSS [attribute|="value"] Selector</h2>
+
+  <h1 class="top-header">Welcome</h1>
+  <p class="top-text">Hello world!</p>
+  <p class="topcontent">Are you learning CSS?</p>
   
   
 </body>
