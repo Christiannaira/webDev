@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      ol {
-        counter-reset: section;
-        list-style-type: none;
+      body {
+        margin: 0;
       }
 
-      li::before {
-        counter-increment: section;
-        content: counters(section, ".") " ";
+      .header {
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center;
       }
       
     </style>
@@ -22,31 +22,9 @@
 </head>
 <body>
 
+    <div class="header">
+      <h1>Header</h1>
+    </div>
 
-  <ol>
-    <li>item</li>
-    <li>item   
-    <ol>
-      <li>item</li>
-      <li>item</li>
-      <li>item
-      <ol>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-      </ol>
-      </li>
-      <li>item</li>
-    </ol>
-    </li>
-    <li>item</li>
-    <li>item</li>
-  </ol>
-  
-  <ol>
-    <li>item</li>
-    <li>item</li>
-  </ol>
-  
 </body>
 </html>
