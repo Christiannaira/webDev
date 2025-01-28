@@ -8,23 +8,45 @@
     <link rel="stylesheet" href="mystyle.css">
     <style> 
 
-      #div1 {
-        background-color: yellow;
-        height: 100px;
-        width: min(50%, 300px);
+      #rcorners1 {
+        border-radius: 25px;
+        background-color: #73AD21;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+
+      #rcorners2 {
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+
+      #rcorners3 {
+        border-radius: 25px;
+        background: url(lake-como.webp);
+        background-position: left top;
+        background-repeat: repeat;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
       }
       
     </style>
 
 </head>
 <body>
-  <h1>The min() Function</h1>
 
-  <p>Use min() to set the width of #div1 to whichever value is smallest, 50% or 300px:</p>
-  
-  <div id="div1">Some text...</div>
-  
-  <p>Resize the browser window to see the effect.</p>
+  <h1>The border-radius Property</h1>
+
+  <p>Rounded corners for an element with a specified background color:</p>
+  <p id="rcorners1">Rounded corners!</p>
+  <p>Rounded corners for an element with a border:</p>
+  <p id="rcorners2">Rounded corners!</p>
+  <p>Rounded corners for an element with a background image:</p>
+  <p id="rcorners3">Rounded corners!</p>
 
 </body>
 </html>
