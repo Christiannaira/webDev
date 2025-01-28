@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      h1 {
+      div#myDiv {
+        background-color: green;
+      }
+      
+      #myDiv {
         background-color: yellow;
       }
 
-      h1 {
-        background-color: red;
+      div[id=myDiv] {
+        background-color: blue;
       }
-
     </style>
 
 </head>
 <body>
 
-  <h1>This is heading 1</h1>
+  <div id="myDiv">This is a div</div>
 
 </body>
 </html>
