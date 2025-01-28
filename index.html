@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="mystyle.css">
     <style> 
 
-      * {
-        background-color: yellow;
+      #myid {
+        background-color: blue;
       }
 
-      h1 {
-        background-color: red;
+      .myclass {
+        background-color: gray;
+      }
+
+      p {
+        background-color: red !important;
       }
       
     </style>
@@ -21,7 +25,11 @@
 </head>
 <body>
 
-  <h1>This is a heading</h1>
+  <p>This is some text in a paragraph.</p>
+
+  <p class="myclass">This is some text in a paragraph.</p>
+  
+  <p id="myid">This is some text in a paragraph.</p>
 
 </body>
 </html>
