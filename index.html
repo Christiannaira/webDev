@@ -7,26 +7,29 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
+      #example1 {
+        border: 10px solid black;
+        padding: 35px;
+        background: url(lake-como.webp);
+        background-repeat: no-repeat;
       }
 
-      .hero-image {
-        background: url(lake-como.webp) no-repeat center;
-        background-size: cover;
-        height: 500px;
-        position: relative;
+      #example2 {
+        border: 10px solid black;
+        padding: 35px;
+        background: url(lake-como.webp);
+        background-repeat: no-repeat;
+        background-origin: border-box;
       }
 
-      .hero-text {
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
+      #example3 {
+        border: 10px solid black;
+        padding: 35px;
+        background: url(lake-como.webp);
+        background-repeat: no-repeat;
+        background-origin: content-box;
       }
+
 
     </style>
 
@@ -34,16 +37,29 @@
 <body>
 
 
-  <div class="hero-image">
-    <div class="hero-text">
-      <h1 style="font-size:50px">I am John Doe</h1>
-      <h3>And I'm a Photographer</h3>
-      <button>Hire me</button>
-    </div>
+  <h1>The background-origin Property</h1>
+
+  <p>No background-origin (padding-box is default):</p>
+  <div id="example1">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
   </div>
   
-  <p>Page content..</p>
-  <p>Note that this technique will also make the image responsive: Resize the browser window to see the effect.</p>
+  <p>background-origin: border-box:</p>
+  <div id="example2">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
+  
+  <p>background-origin: content-box:</p>
+  <div id="example3">
+    <h2>Lorem Ipsum Dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
+  
   
   
 
