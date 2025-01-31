@@ -7,28 +7,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style> 
 
-      #example1 {
-        border: 10px solid black;
-        padding: 35px;
-        background: url(lake-como.webp);
-        background-repeat: no-repeat;
-      }
+     #example1 {
+      border: 10px dotted black;
+      padding: 35px;
+      background: yellow;
+     }
 
-      #example2 {
-        border: 10px solid black;
-        padding: 35px;
-        background: url(lake-como.webp);
-        background-repeat: no-repeat;
-        background-origin: border-box;
-      }
+     #example2 {
+      border: 10px dotted black;
+      padding: 35px;
+      background: yellow;
+      background-clip: padding-box;
+     }
 
-      #example3 {
-        border: 10px solid black;
-        padding: 35px;
-        background: url(lake-como.webp);
-        background-repeat: no-repeat;
-        background-origin: content-box;
-      }
+     #example3 {
+      border: 10px dotted black;
+      padding: 35px;
+      background-color: yellow;
+      background-clip: content-box;
+     }
 
 
     </style>
@@ -37,31 +34,25 @@
 <body>
 
 
-  <h1>The background-origin Property</h1>
+  <h1>The background-clip Property</h1>
 
-  <p>No background-origin (padding-box is default):</p>
+  <p>No background-clip (border-box is default):</p>
   <div id="example1">
     <h2>Lorem Ipsum Dolor</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
   </div>
   
-  <p>background-origin: border-box:</p>
+  <p>background-clip: padding-box:</p>
   <div id="example2">
     <h2>Lorem Ipsum Dolor</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
   </div>
   
-  <p>background-origin: content-box:</p>
+  <p>background-clip: content-box:</p>
   <div id="example3">
     <h2>Lorem Ipsum Dolor</h2>
     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
   </div>
-  
-  
-  
-
+ 
 </body>
 </html>
