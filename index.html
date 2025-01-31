@@ -5,25 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="mystyle.css">
     <style> 
 
-      #borderimg1 {
-        border: 10px solid transparent;
+      #example1 {
+        background-image: url(tree.png), url(lake-como.webp);
+        background-position: right bottom, left top;
+        background-repeat: no-repeat, repeat;
         padding: 15px;
-        border-image: url(lake-como.webp) 50 round;
-      }
-
-      #borderimg2 {
-        border: 10px solid transparent;
-        padding: 15px;
-        border-image: url(lake-como.webp) 20% round;
-      }
-
-      #borderimg3 {
-        border: 10px solid transparent;
-        padding: 15px;
-        border-image: url(lake-como.webp) 30% round;
       }
 
     </style>
@@ -31,13 +19,15 @@
 </head>
 <body>
 
-  <h1>The border-image Property</h1>
 
-  <p id="borderimg1">border-image: url(border.png) 50 round;</p>
-  <p id="borderimg2">border-image: url(border.png) 20% round;</p>
-  <p id="borderimg3">border-image: url(border.png) 30% round;</p>
-  
-  <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+  <h1>Multiple Backgrounds</h1>
+  <p>The following div element has two background images:</p>
+
+  <div id="example1">
+    <h1>Lorem Ipsum Dolor</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+  </div>
   
 
 </body>
